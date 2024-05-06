@@ -16,14 +16,28 @@
         </div>
     </header>
     <div id="under-head">
-        <button class="option">Условие</button>
-        <button class="option">Опити</button>
-        <button class="option">Решение</button>
-        <button class="option">Помощ от AI</button>
+        <div id="left-under-head">
+            <button class="option">Условие</button>
+            <button class="option">Опити</button>
+            <button class="option">Решение</button>
+            <button class="option">Помощ от AI</button>
+        </div>
+        <div id="right-under-head">
+            <div>
+                <select id="programming-languages" onchange="change()">
+                    <option value="c++">C++</option>
+                    <option value="python">Python</option>
+                    <option value="c#">C#</option>
+                    <option value="go">Go</option>
+                </select>
+            </div>
+        </div>
     </div>
     <div id="main">
         <div id="left">
-
+            <p>
+                adsda
+            </p>
         </div>
         <div id="right">
             <div id="right-code">
@@ -41,5 +55,20 @@
             </div>
         </div>
     </div>
+    <script>
+        function change(){
+            let chosen = document.getElementById("programming-languages").value;
+            if(chosen === "c++"){
+                document.getElementById("code").value="#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n\t// your code goes here\n\treturn 0;\n}";
+            }else if(chosen === "python"){
+                document.getElementById("code").value="";
+            }else if(chosen === 'c#'){
+                document.getElementById("code").value="using System;\n\npublic class Test\n{\n\tpublic static void Main()\n\t{\n\t\t// your code goes here\n\t}\n}";
+            }else if(chosen === "go"){
+                document.getElementById("code").value='package main\nimport "fmt"\n\nfunc main(){\n\t// your code goes here\n}';
+            }
+        }
+    </script>
 </body>
+
 </html>
