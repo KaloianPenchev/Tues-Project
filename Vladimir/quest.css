@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 *{
     font-family: "Patrick Hand", cursive;
     font-weight: 400;
     font-style: normal;
-}
+}*/
 body{
     background-color: rgb(29, 30, 35);
 }
@@ -41,7 +41,7 @@ header{
     width: 50%;
 
 }
-#right-under-hood{
+#right-under-head{
     position: absolute;
     display: flex;
     height: 100%;
@@ -51,8 +51,10 @@ header{
 #programming-languages{
     position: absolute;
     background-color: rgb(29, 30, 35);
-    width:5%;
+    width:20%;
     top: 30%;
+    color: white;
+    
 }
 #main{
     position: absolute;
@@ -86,6 +88,7 @@ header{
 
 #test{
     position: absolute;
+    
     left: 0%;
     top: 70%;
     height: 20%;
@@ -117,9 +120,11 @@ header{
 #code{
     width: 98%;
     height: 100%;
-    border: 0;
+    /*border: 0;*/
     outline: 0;
     background-color: #062e35;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.586);
     color: lightgreen;
 }
 
@@ -129,9 +134,11 @@ header{
     top: 30%;
     left: 3%;
     height: 50%;
-    border: 0;
+    /*border: 0;*/
     outline: 0;
     background-color: #062e35;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.586);
     color: lightgreen;
 }
 

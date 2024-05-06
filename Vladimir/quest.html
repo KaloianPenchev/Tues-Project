@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="quest.css"/> 
     <title>Questions </title>
 </head>
-<body>
+<body onload="load()">
     <header>
         <div id="head-left">
             <button id="back">Bac k</button>
@@ -23,14 +23,14 @@
             <button class="option">Помощ от AI</button>
         </div>
         <div id="right-under-head">
-            <div>
-                <select id="programming-languages" onchange="change()">
-                    <option value="c++">C++</option>
-                    <option value="python">Python</option>
-                    <option value="c#">C#</option>
-                    <option value="go">Go</option>
-                </select>
-            </div>
+      
+            <select id="programming-languages" onchange="change()">
+                <option value="c++">C++</option>
+                <option value="python">Python</option>
+                <option value="c#">C#</option>
+                <option value="go">Go</option>
+            </select>
+
         </div>
     </div>
     <div id="main">
@@ -41,10 +41,10 @@
         </div>
         <div id="right">
             <div id="right-code">
-                <textarea id="code"></textarea>
+                <textarea id="code" style="resize: none;" onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}"></textarea>
             </div>
             <div id="test">
-                <textarea id="custom"></textarea>
+                <textarea id="custom" style="resize: none;"></textarea>
             </div>
             
             <div id="code-buttons">
@@ -56,6 +56,9 @@
         </div>
     </div>
     <script>
+        function load(){
+            document.getElementById("code").value="#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n\t// your code goes here\n\treturn 0;\n}";
+        }
         function change(){
             let chosen = document.getElementById("programming-languages").value;
             if(chosen === "c++"){
