@@ -15,6 +15,24 @@ header{
     height: 10%;
     display: flex;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 #back{
     position: absolute;
     top: 10%;
@@ -66,10 +84,15 @@ header{
 }
 #left{
     position: absolute;
-    left: 0%;
+    left: 3%;
     top: 0%;
     height: 100%;
-    width: 50%;
+    width: 45%;
+    color: white;
+    overflow-y: auto;
+}
+#sample{
+    margin-top: -3%;
 }
 #right{
     position: absolute;
@@ -148,4 +171,7 @@ header{
 
 button:hover{
     opacity: 0.5;
+}
+ul {
+    padding-left: 1.4em;
 }
