@@ -14,7 +14,7 @@ body{
     width: 100%;
 }
 
-header {
+.header {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -35,6 +35,7 @@ header {
     height: 100%;
     width: 40%;
     color: white;
+    
 }
 
 .logo{
@@ -127,7 +128,7 @@ header {
     color: white; 
 }
 
-.main-left{
+.first-section-left{
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -139,12 +140,12 @@ header {
     height: 80%;
 }
 
-.main-title h1{
+.first-section-title h1{
     font-size: 4vw;
     width: 100%;
     margin-bottom: 15%;
 }
-.main-title h3{
+.first-section-title h3{
     margin-top: -10%;
 }
 
@@ -204,11 +205,7 @@ header {
 
 }
 
-#iconRegister{
-    
-}
-
-.main-right img{
+.first-section-right img{
     position: absolute;
     width: 45%;
     height: 55%;
@@ -217,13 +214,125 @@ header {
     z-index: -1;    
 }
 
-.footer{
-	background-color: #24262b;
+.second-section{
     position: absolute;
     top: 100%;
     left: 0;
-    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+.second-section-mid{
+   position: absolute;
+   top: 15%;
+   bottom: 15%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   background: linear-gradient(to right,transparent,transparent,#4079da,#4079da,#4079da);
+}
+.second-section-img{
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    width: 50%;
+    height: 70%;
+}
+
+.second-section-description{
+    margin-top: -6%;
+    margin-left: 55%;
+}
+.second-section-btn{
+    margin-top:6%;
+    margin-left: 0.3%;
+    background-color: white;
+    width: 47%;
+    height: 10vh;
+    border-radius: 0.8vw;
+    border: none;
+    font-size: 1.7vw;
+    color: #4079da;
+    cursor: pointer;
+}
+
+.third-section{
+    position: absolute;
+    top: 200%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.third-section-btn{
+    background-color: #4079da;
+    width: 25%;
+    padding: 1% 2% 1% 2%;
+    border-radius: 0.8vw;
+    border: none;
+    font-size: 1.7vw;
+    color: white;
+    cursor: pointer;
     
+    
+}
+.third-section-img{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 45%;
+    height: 80%;
+}
+.fourth-section{
+    position: absolute;
+    top: 300%;
+    left: 0;
+    right: 0;
+    height: 60%;
+    width: 100%;
+    background-color: white;
+}
+.fourth-section-mid{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    background-color: #f3eddf;
+    display: flex;
+    align-items: center;
+ }
+ .fourth-section-img{
+     width: 30%;
+     height: 95%;
+     margin-left: 8%;
+ }
+ 
+ .fourth-section-description{
+     margin-top: -6%;
+     margin-left: 20%;
+ }
+ .fourth-section-btn{
+     margin-top:6%;
+     margin-left: 0.3%;
+     background-color: #6b4024;
+     width: 47%;
+     height: 10vh;
+     border-radius: 0.8vw;
+     border: none;
+     font-size: 1.7vw;
+     color: white;
+     cursor: pointer;
+ }
+.footer{
+	background-color: #24262b;
+    position: absolute;
+    top: 360%;
+    left: 0;
+    right: 0;
 }
 
 .container{
