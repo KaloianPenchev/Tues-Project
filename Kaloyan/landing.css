@@ -327,76 +327,85 @@ body{
      color: white;
      cursor: pointer;
  }
-.footer{
-	background-color: #24262b;
+ .footer {
+    background-color: #24262b;
     position: absolute;
     top: 360%;
     left: 0;
     right: 0;
 }
 
-.container{
-	max-width: 73em;
-	margin:auto;
-}
-.row{
-	display: flex;
-}
-ul{
-	list-style: none;
+.container {
+    width: 97%;
+    margin-left: 3%;
 }
 
-.footer-col{
-   width: 25%;
-   padding: 0 1em;
+.row {
+    display: flex;
 }
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 2em;
-	font-weight: 500;
-	position: relative;
+
+ul {
+    list-style: none;
 }
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left: 0;
-	bottom: -0.6em;
-	background-color: #e91e63;
-	height: 0.1em;
-	box-sizing: border-box;
-	width: 3em;
+
+.footer-col {
+    width: 25%;
+    padding: 0 1.36%;
 }
-.footer-col ul li:not(:last-child){
-	margin-bottom: 0.6em;
+
+.footer-col h4 {
+    font-size: 2vw;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 3.89vw;
+    font-weight: 500;
+    position: relative;
 }
-.footer-col ul li a{
-	font-size: 16px;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.26vw;
+    background-color: #e91e63;
+    height: 0.026vw;
+    box-sizing: border-box;
+    width: 4.11vw;
 }
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 0.5em;
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 0.58vw;
 }
-.footer-col .social-links a{
-	display: inline-block;
-	height: 2.5em;
-	width: 2.5em;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 0.6em 0.6em 0;
-	text-align: center;
-	line-height: 2.5em;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
+
+.footer-col ul li a {
+    font-size: 1.5vw;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
 }
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 0.31vw;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 3.39vw;
+    width: 3.39vw;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 0.58vw 0.58vw 0;
+    text-align: center;
+    line-height: 3.39vw;
+    border-radius: 50%;
+    color: #ffffff;
+    
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
 }
