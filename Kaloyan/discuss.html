@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="discuss.css">
+    <link rel="icon" type="image/jpg" href="pictures/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>CodeTues</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="nav-left">
+            <img class="logo" src="pictures/logo1.png">
+        </div>
+        
+        <div class="nav-mid">
+            <ul class="nav-links">
+                <li><a href="#">Discuss</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Practice</a></li>
+                <li><a href="#">Tests</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <button class="btn-header-1">
+                GO PREMIUM ⚡
+            </button>
+            
+            <button class="btn-header-2">
+                <img class="userPng" src="pictures/user.png">
+            </button>
+           
+            <button class="btn-header-2" onclick="btnFunc(this)">
+                <img class="expandImg1" src="pictures/caret-down.png">
+            </button>
+            
+            <div class="dropdown" style="display: none;">
+                <span>kaloianpenchev</span>
+                <hr>
+                <ul>
+                    <li>My Profile</li>
+                    <li>Edit Profile</li>
+                    <li>My Certificates</li>
+                </ul>
+                <hr>
+                <button class="logOutBtn">
+                    LOGOUT
+                </button>
+            </div>
+            
+        </div>
+    </header>
+
+    <section class="left-section">
+        <div class="left-head">
+            <ul>
+                <li style="margin-bottom:10%;">
+                    <i class='bx bxs-objects-horizontal-left'></i>
+                    Home
+                </li>
+                <li>
+                    <i class='bx bx-repost'></i>
+                    My Posts
+                </li>
+            </ul>
+        </div>
+
+        <div class="left-main">
+            <h1>
+                Categories
+                <i style="margin-left: 38%;" class='bx bxs-pencil'></i>
+            </h1>
+            
+            <button class="expandBtn1" onclick="btnFunc2(this)">
+                <img class="expandImg2" src="pictures/expand.png" width="6%" height="6%">
+            </button>
+            
+            <ul class="list1">
+                <li>
+                    <i class='bx bx-message-square-dots'></i>
+                    general
+                </li>
+                <li>
+                    <i class='bx bxs-envelope' ></i>
+                    feedback
+                </li>
+                <li>
+                    <i class='bx bx-edit-alt' ></i>
+                    editorals
+                </li>
+                <li>
+                    <i class='bx bx-help-circle' ></i>
+                    help
+                </li>
+                <li>
+                    <i class='bx bxs-bell' ></i>
+                    announcement
+                </li>
+                <li>
+                    <i class='bx bx-grid-small'></i>
+                    all categories
+                </li>
+            </ul>
+            
+            <h1>
+                Tags
+                <i style="margin-left: 62%;" class='bx bxs-pencil'></i>
+            </h1>
+            
+            <button class="expandBtn2" onclick="btnFunc2(this)">
+                <img class="expandImg2" src="pictures/expand.png" width="6%" height="6%">
+            </button>
+            
+            <ul class="list2">
+                <li>
+                    <i class='bx bx-dialpad-alt'></i>
+                    learn
+                </li>
+                <li>
+                    <i class='bx bx-purchase-tag-alt'></i>
+                    All tags
+                </li>
+            </ul>
+        </div>
+    <div class="left-footer">
+        <i class='bx bx-shield-plus'></i>
+        <i class='bx bxs-phone-call'></i>
+        <i class='bx bxs-keyboard'></i>
+    </div>
+    </section>
+
+    <section class="right-section">
+        <div class="filters">
+            <input type="text" placeholder="all categories" disabled>
+            <input type="text" placeholder="all tags" disabled>
+            
+            <ul>
+                <li>Latest</li>
+                <li>Unread</li>
+                <li>Top</li>
+                <li>Categories</li>
+            </ul>
+            
+            <button>
+                <i class='bx bx-plus'></i>
+                New Topic
+            </button>
+        </div>
+        
+        <table>
+             
+        </table>
+    </section>
+
+    
+
+   <script>
+    function btnFunc(button) {
+        var panel = button.nextElementSibling;
+        var img = button.querySelector('.expandImg1');
+        
+        if (panel.style.display === "none") {
+            panel.style.display = "block";
+            img.src = "pictures/caret-up.png";
+        } else {
+            panel.style.display = "none";
+            img.src = "pictures/caret-down.png";
+            
+        }
+        
+    }
+
+    function btnFunc2(button) {
+        var panel = button.nextElementSibling;
+        var img = button.querySelector('.expandImg2');
+        
+        if (panel.style.display === "none") {
+            panel.style.display = "block";
+            img.src = "pictures/expand.png";
+        } else {
+            panel.style.display = "none";
+            img.src = "pictures/collapse.png";
+        }
+        
+    }
+</script>
+
+</html>
