@@ -327,7 +327,7 @@ body{
      color: white;
      cursor: pointer;
  }
- .footer {
+.footer {
     background-color: #24262b;
     position: absolute;
     top: 360%;
@@ -392,7 +392,7 @@ ul {
     padding-left: 0.31vw;
 }
 
-.footer-col .social-links a {
+.social-links a {
     display: inline-block;
     height: 3.39vw;
     width: 3.39vw;
@@ -405,7 +405,7 @@ ul {
     
 }
 
-.footer-col .social-links a:hover {
+.social-links a:hover {
     color: #24262b;
     background-color: #ffffff;
 }
