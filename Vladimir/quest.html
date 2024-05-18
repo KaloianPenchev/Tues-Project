@@ -8,19 +8,31 @@
 </head>
 <body onload="load()">
     <header>
-        <div id="head-left">
-            <button id="back">Bac k</button>
-        </div>       
-        <div id="head-right">
 
+        <img class="back"src="pictures/back.png" style="position: absolute;top: 30%;left: 2%;">
+              
+    
+        <img class="back"src="pictures/back.png" style="position: absolute;top: 30%;left: 57%;">
+        <p style="position: absolute;top: 18.5%;left: 60%; color:white" >Prev</p>
+        <div style="position:absolute; top:44%;left:62%; width: 30%; height: 50%; display: flex;">
+            <div class="progress"></div>
+            <div class="progress"></div>
+            <div class="progress-n"></div>
+            <div class="progress-n"></div>
+            <div class="progress-n"></div>
+            <div class="progress-n"></div>
         </div>
+        <p style="position: absolute;top: 18.5%;left: 93%; color:white">Next</p>
+        <img class="back"src="pictures/back.png" style="position: absolute;top: 29%;left: 96%;transform: rotate(180deg);">
+            
+        
     </header>
     <div id="under-head">
         <div id="left-under-head">
-            <button class="option">Условие</button>
-            <button class="option">Опити</button>
-            <button class="option">Решение</button>
-            <button class="option">Помощ от AI</button>
+            <button class="option">Question</button>
+            <button class="option">Previous submissions</button>
+            <button class="option">Solution</button>
+            <button class="option">Help from AI</button>
         </div>
         <div id="right-under-head">
       
@@ -86,7 +98,7 @@
     </div>
     <script>
         function load(){
-            
+            document.getElementById("custom").value="Your output";
             document.getElementById("code").value="#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n\t// your code goes here\n\treturn 0;\n}";
         }
         function change(){
