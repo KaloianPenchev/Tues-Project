@@ -15,7 +15,7 @@ body{
 }
 
 .header {
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     height: 10%;
@@ -123,11 +123,10 @@ body{
     min-width: 10%;
     box-shadow: 0px 2px 2px 2px rgb(0, 0, 0, 0.1);
     padding: 2% 5%;
-    z-index: 1;
+   
 }
 
 .dropdown span{
-    /* margin-left: 8%; */
     display: flex;
     justify-content: center;
 }
@@ -141,6 +140,7 @@ body{
 .dropdown li{
     margin-bottom: 10%;
 }
+
 .logOutBtn{
     margin-left: 25%;
     background-color: white;
@@ -151,7 +151,7 @@ body{
 }
 
 .left-section{
-    position: absolute;
+    position: fixed;
     top: 10%;
     left: 0%;
     bottom: 0%;
@@ -159,6 +159,7 @@ body{
     max-width: 20%;
     padding-left: 1.5%;
     padding-top: 1%;
+    overflow: hidden;
     
 }
 
@@ -222,9 +223,75 @@ ul{
 
 .right-section{
     position: absolute;
-    left:40%;
-    top: 40%;
+    left:17%;
+    top: 17%;
+    right: 0%;
+    bottom: 0%;
+    overflow-x: auto;
 }
 .filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.filters input{
+    height: 5vh;
+    width: 10vw;
+    border: 1px solid black;
+    padding: 0% 1% 0% 1%;
+}
+.filters input::placeholder{
+    color: black;
+}
+
+.filters ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: -4%;
+}
+.filters li{
+    padding-left: 10%;
+    text-decoration: underline;
+}
+.filters button{
+    margin-left: 26%;
+    border: none;
+    padding: 1% 1% 1% 1%;
+    border-radius: 0.3vw;
+    background-color: #eaeaea;
+    font-size: 1.2vw;
+}
+
+.tablediscuss{
+    position: absolute;
+    margin-top: 1.5%;
+    left: 10%;
+    width: 88%;
+    border-collapse: collapse;
+}
+
+.tablehead {
+    background-color: #f2f2f2;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    height: 10vh;
+}
+.tablehead th {
+    padding: 10px;
+    text-align: left;
+}
+.tablerow {
+    border-bottom: 1px solid #ddd;
     
+}
+.tablerow th, .tablerow td {
+    padding: 20px;
+    text-align: left;
+}
+
+.tablerow td:hover{
+    text-decoration: underline;
 }
