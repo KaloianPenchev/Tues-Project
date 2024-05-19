@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
     <link rel="icon" type="image/jpg" href="pictures/favicon.ico">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -13,7 +13,7 @@
     
     <header class="header">
         <div class="nav-left">
-            <img class="logo" src="pictures/logo1.png">
+            <img class="logo" src="{{ url_for('static', filename='pictures/Kaloyan/logo1.png') }}">
         </div>
         
         <div class="nav-mid">
@@ -83,13 +83,13 @@
         
         
         <div class="first-section-right">
-            <img src="pictures/coding_boy.png">
+            <img src="{{ url_for('static', filename='pictures/Kaloyan/coding-boy.png') }}">
         </div>
     </section>
     
     <section>
         <div class="second-section">
-            <img class="second-section-img" src="pictures/students.jpg">
+            <img class="second-section-img" src="{{ url_for('static', filename='pictures/Kaloyan/students.jpg') }}">
             <div class="second-section-mid">
                 <div class="second-section-description">
                     <h3 class="first-line">
@@ -114,7 +114,7 @@
                 Start learning today  ⚡
             </button>
             
-            <img class="third-section-img" src="pictures/learnToCode.png">
+            <img class="third-section-img" src="{{ url_for('static', filename='pictures/Kaloyan/learnToCode.png') }}">
 
         </div>
     </section>
@@ -122,7 +122,7 @@
     <section>
         <div class="fourth-section">
             <div class="fourth-section-mid">
-                <img class="fourth-section-img" src="pictures/thinker.png">
+                <img class="fourth-section-img" src="{{ url_for('static', filename='pictures/Kaloyan/thinker.png') }}">
                 
                 <div class="fourth-section-description">
                     <h3 class="first-line">
