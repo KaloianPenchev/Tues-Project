@@ -18,7 +18,7 @@
         
         <div class="nav-mid">
             <ul class="nav-links">
-                <li><a href="/home">Home</a></li>
+                <li><a href="/homepage">Home</a></li>
                 <li><a href="/discuss">Discuss</a></li>
                 <li><a href="/courses">Courses</a></li>
                 <li><a href="/practice">Practice</a></li>
@@ -47,11 +47,11 @@
                     <li>My Certificates</li>
                 </ul>
                 <hr>
-                <button class="logOutBtn">
-                    <a href="/logout">
+                <a href="/logout">
+                    <button class="logOutBtn">
                         LOGOUT
-                    </a>
-                </button>
+                    </button>
+                </a>
             </div>
             
         </div>
@@ -292,10 +292,10 @@
         
         if (panel.style.display === "none") {
             panel.style.display = "block";
-            img.src = "pictures/caret-up.png";
+            img.src = "{{ url_for('static', filename='pictures/caret-up.png') }}";
         } else {
             panel.style.display = "none";
-            img.src = "pictures/caret-down.png";
+            img.src = "{{ url_for('static', filename='pictures/caret-down.png') }}";
             
         }
         
@@ -307,10 +307,10 @@
         
         if (panel.style.display === "none") {
             panel.style.display = "block";
-            img.src = "pictures/expand.png";
+            img.src = "{{ url_for('static', filename='pictures/expand.png') }}";
         } else {
             panel.style.display = "none";
-            img.src = "pictures/collapse.png";
+            img.src = "{{ url_for('static', filename='pictures/collapse.png') }}";
         }
         
     }

@@ -15,11 +15,11 @@
         
         <div class="nav-mid">
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Discuss</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Practice</a></li>
-                <li><a href="#">Tests</a></li>
+                <li><a href="/homepage">Home</a></li>
+                <li><a href="/discuss">Discuss</a></li>
+                <li><a href="/courses">Courses</a></li>
+                <li><a href="/practice">Practice</a></li>
+                <li><a href="/tests">Tests</a></li>
             </ul>
         </div>
 
@@ -45,9 +45,11 @@
                     <li>My Certificates</li>
                 </ul>
                 <hr>
-                <button class="logOutBtn">
-                    LOGOUT
-                </button>
+                <a href="/logout">
+                    <button class="logOutBtn">
+                        LOGOUT
+                    </button>
+                </a>
             </div>
             
         </div>
@@ -244,34 +246,21 @@
     </footer>
 
     <script>
-    function btnFunc(button) {
-        var panel = button.nextElementSibling;
-        var img = button.querySelector('.expandImg1');
-        
-        if (panel.style.display === "none") {
-            panel.style.display = "block";
-            img.src = "pictures/caret-up.png";
-        } else {
-            panel.style.display = "none";
-            img.src = "pictures/caret-down.png";
+        function btnFunc(button) {
+            var panel = button.nextElementSibling;
+            var img = button.querySelector('.expandImg1');
+            
+            if (panel.style.display === "none") {
+                panel.style.display = "block";
+                img.src = "{{ url_for('static', filename='pictures/caret-up.png') }}";
+            } else {
+                panel.style.display = "none";
+                img.src = "{{ url_for('static', filename='pictures/caret-down.png') }}";
+                
+            }
             
         }
-        
-    }
-
-    function btnFunc2(button) {
-        var panel = button.nextElementSibling;
-        var img = button.querySelector('.expandImg2');
-        
-        if (panel.style.display === "none") {
-            panel.style.display = "block";
-            img.src = "pictures/expand.png";
-        } else {
-            panel.style.display = "none";
-            img.src = "pictures/collapse.png";
-        }
-        
-    }
-   </script>
+    
+    </script>
 </body>
 </html>
