@@ -5,10 +5,10 @@ Nikola:
   * Test page
 
 Vladimir:
-  *Courses page
-  *Practice page
+  * Courses page
+  * Practice page
 
 Kaloian:
-  *Landing page
-  *Discuss page
-  *Login/Register forms
+  * Landing page
+  * Discuss page
+  * Login/Register forms
