@@ -69,8 +69,8 @@ def practice():
 def tests():
     return render_template('upcomingtests.html')
 
-@auth.route('/home', methods=['GET', 'POST'])
-def home():
+@auth.route('/homeafterreg', methods=['GET', 'POST'])
+def homeafterRegister():
     return render_template('home.html')
 
 @auth.route('/discuss', methods=['GET', 'POST'])
