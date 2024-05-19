@@ -50,6 +50,10 @@ form input{
     height: 10%;
     margin-top: 5%;
 }
+.form-section button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
 .member{
     font-size: 1.4vw;
     margin-top: 6%;
