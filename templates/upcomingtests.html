@@ -74,7 +74,18 @@
             <td>14 May 2024   Tuesday 16:30</td>
             <td>1 hr 30 min</td>
             <td>8 days 4 hrs</td>
-            <td class="BellRow"><button class="buttomBell"><img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka"></td>
+            <td class="BellRow">
+                <button class="buttomBell" onclick="openPopup(this)">
+                    <img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka">
+                </button>
+            </td>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p>Your next contest has been added to your calendar. A notification will pop out 30 minutes before the test.</p>
+                </div>
+            </div>
+            
         </tr>
         <tr class="row2">
             <td>C++</td>
@@ -82,7 +93,18 @@
             <td>17 May 2024   Friday 11:15</td>
             <td>2 hrs</td>
             <td>10 days 23 hrs</td>
-            <td class="BellRow"><button class="buttomBell" onclick="myScript"><img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka"></button></td>
+            <td class="BellRow">
+                <button class="buttomBell" onclick="openPopup(this)">
+                    <img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka">
+                </button>
+            </td>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p>Your next contest has been added to your calendar. A notification will pop out 30 minutes before the test.</p>
+                </div>
+            </div>
+            
         </tr>
         <tr class="row2">
             <td>JavaScript</td>
@@ -90,7 +112,18 @@
             <td>15 May 2024   Wednesday 14:00</td>
             <td>2 hrs</td>
             <td>9 days 21 hrs</td>
-            <td class="BellRow"><button class="buttomBell" onclick="myScript"><img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka"></button></td>
+            <td class="BellRow">
+                <button class="buttomBell" onclick="openPopup(this)">
+                    <img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka">
+                </button>
+            </td>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p>Your next contest has been added to your calendar. A notification will pop out 30 minutes before the test.</p>
+                </div>
+            </div>
+            
         </tr>
         <tr class="row2">
             <td>C#</td>
@@ -98,7 +131,18 @@
             <td>23 May 2024   Thursday 15:45</td>
             <td>2 hrs 30 min</td>
             <td>17 days 3 hrs</td>
-            <td class="BellRow"><button class="buttomBell" onclick="myScript"><img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka"></button></td>
+            <td class="BellRow">
+                <button class="buttomBell" onclick="openPopup(this)">
+                    <img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka">
+                </button>
+            </td>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p>Your next contest has been added to your calendar. A notification will pop out 30 minutes before the test.</p>
+                </div>
+            </div>
+            
         </tr>
         <tr class="row2">
             <td>Java</td>
@@ -106,7 +150,18 @@
             <td>17 May 2024   Friday 10:00</td>
             <td>3 hrs</td>
             <td>11 days 16 hrs</td>
-            <td class="BellRow"><button class="buttomBell" onclick="myScript"><img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka"></button></td>
+            <td class="BellRow">
+                <button class="buttomBell" onclick="openPopup(this)">
+                    <img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka">
+                </button>
+            </td>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p>Your next contest has been added to your calendar. A notification will pop out 30 minutes before the test.</p>
+                </div>
+            </div>
+            
         </tr>
         
         <tr class="row2">
@@ -115,7 +170,18 @@
             <td>20 May 2024   Monday 09:30</td>
             <td>1 hr 45 min</td>
             <td>14 days 15 hrs</td>
-            <td class="BellRow"><button class="buttomBell" onclick="myScript"><img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka"></button></td>
+
+            <td class="BellRow">
+                <button class="buttomBell" onclick="openPopup(this)">
+                    <img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka">
+                </button>
+            </td>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p>Your next contest has been added to your calendar. A notification will pop out 30 minutes before the test.</p>
+                </div>
+            </div>
             
         </tr>
 
@@ -141,15 +207,6 @@
             </div>
     </footer>
 
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup"></span>
-            <p>Your next contest has been successfully added to your calendar. You will receive a notification 30 minutes before the contest begins.
-
-            Good luck!</p>
-        </div> 
-    </div>
-
     <script>
         function btnFunc(button) {
             var panel = button.nextElementSibling;
@@ -164,13 +221,16 @@
                 
             }
             
+            
         }
         function openPopup() {
-            document.getElementById("popup").style.display = "block";
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
         }
 
         function closePopup() {
-            document.getElementById("popup").style.display = "none";
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
         }
     </script>
 </body>
