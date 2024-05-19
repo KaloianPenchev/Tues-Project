@@ -4,13 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Home</title>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <div class="nav-left">
+            <img class="logo" src="/Tues-Project/Kaloyan/pictures/logo1.png">
+        </div>
+        
+        <div class="nav-mid">
+            <ul class="nav-links">
+                <li><a href="#">Discuss</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Practice</a></li>
+                <li><a href="#">Tests</a></li>
+            </ul>
+        </div>
 
+        <div class="nav-right">
+            <button class="btn-header-1">
+                GO PREMIUM ⚡
+            </button>
+            
+            <button class="btn-header-2">
+                <img class="userPng" src="/Tues-Project/Kaloyan/pictures/user.png">
+            </button>
+           
+            <button class="btn-header-2" onclick="btnFunc(this)">
+                <img class="expandImg1" src="/Tues-Project/Kaloyan/pictures/caret-down.png">
+            </button>
+            
+            <div class="dropdown" style="display: none;">
+                <span>kaloianpenchev</span>
+                <hr>
+                <ul>
+                    <li>My Profile</li>
+                    <li>Edit Profile</li>
+                    <li>My Certificates</li>
+                </ul>
+                <hr>
+                <button class="logOutBtn">
+                    LOGOUT
+                </button>
+            </div>
+            
+        </div>
     </header>
-
     <h1 class="title1">Continue Your Learning</h1>
 
     <section class="progressBox">
@@ -69,11 +109,11 @@
             <div class="top-half-cplus"></div>
             <img class="CPlusLogo" src="pictures/c++-pic-for-home-page.png" width="25%">
 
-            <h2 class="CPlusLogo">Learn frontend development using HTML / CSS / JS</h2>
+            <h2 class="CPlusTitle">Complete C++ language Roadmap</h2>
 
-            <p>406 Problems • 20K+ Learners</p>
+            <p>616 Problems • 80K+ Learners</p>
 
-            <p>Are you a complete beginner in Web Development? Follow our web development and become a pro Web Developer</p>
+            <p>Havo you tried multiple courses C++ but are still not able to convert your logic to code in C++?</p>
         </div>
     
         <h1 class="title3">Assess Yourself</h1>
@@ -175,6 +215,50 @@
                 <button class="ExploreViewAllButton">View all</button>
             </div>
         </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Learning Courses</h4>
+                        <ul>
+                            <li><a href="#">Learning Problems</a></li>
+                            <li><a href="#">CodeTues Discuss</a></li>
+                            <li><a href="#">Practice Problems</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Programming Tools</h4>
+                        <ul>
+                            <li><a href="#">Online IDE</a></li>
+                            <li><a href="#">Coding Contests</a></li>
+                            <li><a href="#">Host Rated Contest</a></li>
+                            <li><a href="#">Problem Setting</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>More</h4>
+                        <ul>
+                            <li><a href="#">CodeTues For Colleges</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Code Of Conduct</a></li>
+                            <li><a href="#">User Ranklist</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
 
 </body>
 </html>
