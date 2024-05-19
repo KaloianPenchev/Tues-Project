@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='pictures/favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Home</title>
@@ -10,7 +11,7 @@
 <body>
     <header class="header">
         <div class="nav-left">
-            <img class="logo" src="{{ url_for('static', filename='pictures/Nikola/logo1.png') }}">
+            <img class="logo" src="{{ url_for('static', filename='pictures/logo1.png') }}">
         </div>
         
         <div class="nav-mid">
@@ -28,11 +29,11 @@
             </button>
             
             <button class="btn-header-2">
-                <img class="userPng" src="{{ url_for('static', filename='pictures/Nikola/user.png') }}">
+                <img class="userPng" src="{{ url_for('static', filename='pictures/user.png') }}">
             </button>
            
             <button class="btn-header-2" onclick="btnFunc(this)">
-                <img class="expandImg1" src="{{ url_for('static', filename='pictures/Nikola/caret-down.png') }}">
+                <img class="expandImg1" src="{{ url_for('static', filename='pictures/caret-down.png') }}">
             </button>
             
             <div class="dropdown" style="display: none;">
@@ -55,7 +56,7 @@
 
     <section class="progressBox">
         <div class="LogoAndHeading">
-                <img class="C-logo" src="{{ url_for('static', filename='pictures/Nikola/c-piuc-for-home-page.png') }}" alt="c language pic" width="10%">
+                <img class="C-logo" src="{{ url_for('static', filename='pictures/c-piuc-for-home-page.png') }}" alt="c language pic" width="10%">
     
                 <h2 class="HeadingProgress">STLs in C</h2>
         
@@ -81,7 +82,7 @@
     <section>
         <div class="PythonCourseBox">
             <div class="top-half-python"></div>
-            <img class="PythonLogo" src="{{ url_for('static', filename='pictures/Nikola/Python-logo-notext.svg.png') }}" width="25%">
+            <img class="PythonLogo" src="{{ url_for('static', filename='pictures/Python-logo-notext.svg.png') }}" width="25%">
 
             <h2 class="PythonTitle">Master Data Analytics Using Python</h2>
 
@@ -94,7 +95,7 @@
     <section>
         <div class="HtmlCourseBox">
             <div class="top-half-html"></div>
-            <img class="HtmlLogo" src="{{ url_for('static', filename='pictures/Nikola/html-pic-for-home-page.jpg') }}" width="25%">
+            <img class="HtmlLogo" src="{{ url_for('static', filename='pictures/html-pic-for-home-page.jpg') }}" width="25%">
 
             <h2 class="HtmlTitle">Learn frontend development using HTML / CSS / JS</h2>
 
@@ -107,7 +108,7 @@
     <section>
         <div class="CPlusCourseBox">
             <div class="top-half-cplus"></div>
-            <img class="CPlusLogo" src="{{ url_for('static', filename='pictures/Nikola/c++-pic-for-home-page.png') }}" width="25%">
+            <img class="CPlusLogo" src="{{ url_for('static', filename='pictures/c++-pic-for-home-page.png') }}" width="25%">
 
             <h2 class="CPlusTitle">Complete C++ language Roadmap</h2>
 

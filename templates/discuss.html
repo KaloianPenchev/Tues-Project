@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/discuss.css') }}">
-    <link rel="icon" type="image/jpg" href="pictures/favicon.ico">
+    <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='pictures/favicon.ico') }}">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Discuss</title>
@@ -13,7 +13,7 @@
     
     <header class="header">
         <div class="nav-left">
-            <img class="logo" src="{{ url_for('static', filename='pictures/Kaloian/logo1.png') }}">
+            <img class="logo" src="{{ url_for('static', filename='pictures/logo1.png') }}">
         </div>
         
         <div class="nav-mid">
@@ -31,11 +31,11 @@
             </button>
             
             <button class="btn-header-2">
-                <img class="userPng" src="{{ url_for('static', filename='pictures/Kaloian/user.png') }}">
+                <img class="userPng" src="{{ url_for('static', filename='pictures/user.png') }}">
             </button>
            
             <button class="btn-header-2" onclick="btnFunc(this)">
-                <img class="expandImg1" src="{{ url_for('static', filename='pictures/Kaloian/caret-down.png') }}">
+                <img class="expandImg1" src="{{ url_for('static', filename='pictures/caret-down.png') }}">
             </button>
             
             <div class="dropdown" style="display: none;">
@@ -78,7 +78,7 @@
             </h1>
             
             <button class="expandBtn1" onclick="btnFunc2(this)">
-                <img class="expandImg2" src="{{ url_for('static', filename='pictures/Kaloian/expand.png') }}" width="6%" height="6%">
+                <img class="expandImg2" src="{{ url_for('static', filename='pictures/expand.png') }}" width="6%" height="6%">
             </button>
             
             <ul class="list1">
@@ -114,7 +114,7 @@
             </h1>
             
             <button class="expandBtn2" onclick="btnFunc2(this)">
-                <img class="expandImg2" src="{{ url_for('static', filename='pictures/Kaloian/expand.png') }}" width="6%" height="6%">
+                <img class="expandImg2" src="{{ url_for('static', filename='pictures/expand.png') }}" width="6%" height="6%">
             </button>
             
             <ul class="list2">
